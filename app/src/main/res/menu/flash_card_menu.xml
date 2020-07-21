@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/resetCardsFCMenu"
+    android:title="Reset"
+    app:showAsAction="always"
+    />
+    <item android:id="@+id/barron333FCMenu"
+        android:title="333 HF words"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/dictionaryFCMenu"
+        android:title="800 HF words"
+        app:showAsAction="never"
+        />
+</menu>

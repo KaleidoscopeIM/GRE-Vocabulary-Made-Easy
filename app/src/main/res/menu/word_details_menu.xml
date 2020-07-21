@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!--<item android:id="@+id/showSynonyms"
+        android:title="Synonyms"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/showAntonyms"
+        android:title="Antonyms"
+        app:showAsAction="never"
+        /> -->
+    <item android:id="@+id/reportWordIssue"
+        android:title="Report an Issue"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/id_synonymCheck"
+        android:titleCondensed="Options"
+        android:title="Synonyms"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:checkable="true">
+    </item>
+    <item android:id="@+id/id_antonymCheck"
+        android:titleCondensed="Persist"
+        android:title="Antonyms"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:checkable="true">
+    </item>
+ <item android:id="@+id/id_voice_modulation"
+     android:titleCondensed="Persist"
+     android:title="Voice Modulation"
+     app:showAsAction="never">
+ </item>
+</menu>

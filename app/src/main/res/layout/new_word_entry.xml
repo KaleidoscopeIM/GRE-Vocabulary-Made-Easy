@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/newWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:layout_margin="2dp"
+            android:background="@drawable/report_issue_edit_text"
+            android:hint="Word"/>
+
+        <EditText
+            android:id="@+id/newWordType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/newWord"
+            android:layout_below="@+id/newWord"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:layout_margin="2dp"
+            android:background="@drawable/report_issue_edit_text"
+            android:hint="Type"/>
+
+        <EditText
+            android:id="@+id/newWordMeaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/newWordType"
+            android:layout_below="@+id/newWordType"
+            android:background="@drawable/report_issue_edit_text"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:layout_margin="2dp"
+            android:hint="Meaning" />
+
+        <EditText
+            android:id="@+id/newWordSentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/newWordMeaning"
+            android:layout_below="@+id/newWordMeaning"
+            android:background="@drawable/report_issue_edit_text"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:layout_margin="2dp"
+            android:hint="Sentence in use" />
+
+        <EditText
+            android:id="@+id/newWordSynonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/newWordSentence"
+            android:layout_below="@+id/newWordSentence"
+            android:background="@drawable/report_issue_edit_text"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:layout_margin="2dp"
+            android:hint="Synonyms" />
+
+        <EditText
+            android:id="@+id/newWordAntonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/newWordSynonyms"
+            android:layout_below="@+id/newWordSynonyms"
+            android:background="@drawable/report_issue_edit_text"
+            android:ems="10"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:lines="2"
+android:layout_margin="2dp"
+            android:hint="Antonyms" />
+
+        <Button
+            android:id="@+id/newWordSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newWordAntonyms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:elevation="5dp"
+            android:layout_margin="20dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/next_pre_buttons"/>
+
+        <ImageView
+            android:id="@+id/newWordBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/bw_star" />
+        />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

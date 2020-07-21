@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+    <SeekBar
+        android:id="@+id/id_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:max="15"
+        android:min="5"
+        android:progress="7"
+        android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/id_voice_modulation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id_seekBar"
+            android:text="0.7f" />
+
+    <Button
+        android:id="@+id/id_set_voice_modulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_below="@id/id_voice_modulation_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_got_it"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+         />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

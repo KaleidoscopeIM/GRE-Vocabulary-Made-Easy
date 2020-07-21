@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GRE Vocabulary made easy</string>
+    <string name="main_activity">GRE Vocabulary made easy</string>
+    <string name="word_list">Words List</string>
+    <string name="flash_card">Flash Cards</string>
+    <string name="word_detail">Word Details</string>
+    <string name="word_bookmarked">My Words</string>
+    <string name="word_add_new">Add My Word</string>
+    <string name="dictionary">800 High\n Freq</string>
+    <string name="my_words">My Fav\n Words</string>
+    <string name="buy_coffee">Coffee\n Time</string>
+    <string name="barrons333">333 High\n Freq</string>
+    <string name="flash_card_spaced">Flash\nCards</string>
+    <string name="report_issue">Report\nIssue</string>
+    <string name="manage_notifications">Notify \nMe</string>
+    <string name="b800_menu_item">800 High frequency words</string>
+    <string name="admob_app_id">ca-app-pub-1290738907415765~3668862095</string>
+</resources>

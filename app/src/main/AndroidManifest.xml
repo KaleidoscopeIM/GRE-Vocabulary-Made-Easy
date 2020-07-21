@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.curiousfreaks.greword">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_rect"
+        android:roundIcon="@mipmap/logo_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/my_backup_rules">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1290738907415765~3668862095"/>
+
+        <activity android:name="com.curiousfreaks.greword.MainActivity"
+            android:label="@string/main_activity"
+            android:theme="@style/AppTheme.Launcher"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.curiousfreaks.greword.CommonAllWords"
+            android:label="@string/word_list">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.MainActivity" />
+        </activity>
+
+        <activity android:name="com.curiousfreaks.greword.FlashCards"
+            android:label="@string/flash_card">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.MainActivity" />
+        </activity>
+        <activity android:name="com.curiousfreaks.greword.WordDetails"
+            android:label="@string/word_detail"
+            android:parentActivityName="com.curiousfreaks.greword.CommonAllWords">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.CommonAllWords" />
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.curiousfreaks.greword.NewWordEntry"
+            android:label="@string/word_add_new"
+            android:parentActivityName="com.curiousfreaks.greword.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.NewWordEntry" />
+        </activity>
+        <activity android:name="com.curiousfreaks.greword.manageNotifications"
+            android:label="@string/manage_notifications"
+            android:parentActivityName="com.curiousfreaks.greword.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.MainActivity" />
+        </activity>
+        <receiver android:name="com.curiousfreaks.greword.notificationReceiver"  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.curiousfreaks.greword.BuyCoffee"
+            android:label="Buy Coffee"
+            android:parentActivityName="com.curiousfreaks.greword.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.curiousfreaks.greword.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
